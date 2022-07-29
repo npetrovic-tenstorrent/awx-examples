@@ -4,5 +4,8 @@
  
   tasks:
  
+  - name: Install Python
+    raw: apt -y update && apt install -y python-minimal
+
   - name: Lsal
-    script: lsal.py
+    command: python3 lsal.py
