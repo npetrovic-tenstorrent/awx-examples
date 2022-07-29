@@ -1,3 +1,8 @@
 ---
-- name: execute ls al on machine
-  script: lsal.py
+- name: Lsal
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Lsal
+    script: lsal.py
